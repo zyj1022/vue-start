@@ -1,0 +1,31 @@
+<template>
+  <div class="hello">
+    <HeaderBar></HeaderBar>
+    <MenuBar></MenuBar>
+    <div class="mod">
+        <h1>hello</h1>
+    </div>
+    <FooterBar></FooterBar>
+  </div>
+</template>
+
+<script>
+
+import HeaderBar from '../components/header.vue'
+import MenuBar from '../components/menu.vue'
+import FooterBar from '../components/footer.vue'
+
+export default {
+  name: 'hello',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  components: {
+    HeaderBar,
+    MenuBar,
+    FooterBar
+  }
+}
+</script>

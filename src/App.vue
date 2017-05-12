@@ -1,52 +1,14 @@
 <template>
-	<div id="app">
-		<first></first>
-		<img src="./assets/logo.png">
-		<ul>
-			<li>
-				<router-link to="/first">点我跳转到第一页 1</router-link>
-			</li>
-			<li>
-				<router-link to="/second">点我跳转到第二页 2</router-link>
-			</li>
-		</ul>
-		<router-view class="view"></router-view>
-
-		<h1>{{ msg }}</h1>
-		<h2>Essential Links</h2>
-		<ul>
-			<li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-			<li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-			<li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-			<li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-		</ul>
-		<h2>Ecosystem</h2>
-		<ul>
-			<li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-			<li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-			<li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-			<li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-		</ul>
-	</div>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-    import first from './components/first.vue'
-    import second from './components/second.vue'
-    export default {
-        name: 'app',
-        data() {
-            return {
-                msg: 'Welcome to Your Vue.js App'
-            }
-        },
-        components: {
-            first,
-            second
-        }
-    }
+export default {
+  name: 'app'
+}
 </script>
-
-<style lang="sass">
-    @import "/styles/base.scss";
+<style lang="scss">
+  @import "./styles/style.scss";
 </style>
