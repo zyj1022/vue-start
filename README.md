@@ -1,5 +1,7 @@
 # vue2-start
 
+vue2.0 框架配置 vue-cli + vue-router + vuex
+
 > A Vue.js project-demo  vue全家桶实例
 
 ## Build Setup
